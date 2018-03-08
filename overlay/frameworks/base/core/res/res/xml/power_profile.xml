@@ -9,7 +9,6 @@
        are totally dependent on the platform and can vary
        significantly, so should be measured on the shipping platform
        with a power meter. -->
-  <item name="none">0</item>
 
   <!-- Display related values. -->
   <!-- Average battery current draw of display0 while on without backlight.
