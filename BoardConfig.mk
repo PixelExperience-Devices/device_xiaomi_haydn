@@ -18,6 +18,8 @@ BOARD_VENDOR := xiaomi
 
 DEVICE_PATH := device/xiaomi/haydn
 
+BUILD_BROKEN_DUP_RULES := true
+
 # Releasetools
 TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
 
