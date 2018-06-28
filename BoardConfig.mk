@@ -104,3 +104,7 @@ TARGET_USES_MKE2FS := true
 
 # Screen density
 TARGET_SCREEN_DENSITY := 440
+
+# Verified Boot
+BOARD_AVB_ENABLE := true
+BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 2
