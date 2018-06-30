@@ -90,6 +90,9 @@ AB_OTA_PARTITIONS += \
     vendor \
     vendor_boot
 
+# Bluetooth
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth/include
+
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := haydn
 TARGET_NO_BOOTLOADER := true
