@@ -21,14 +21,21 @@
 
 #ifndef _BDROID_BUILDCFG_H
 #define _BDROID_BUILDCFG_H
-#pragma push_macro("PROPERTY_VALUE_MAX")
-#include <cutils/properties.h>
+#include <stdint.h>
 #include <string.h>
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+int property_get(const char *key, char *value, const char *default_value);
+#ifdef __cplusplus
+}
+#endif
 
 inline const char* BtmGetDefaultName()
 {
-	char region[PROPERTY_VALUE_MAX];
-	char sku[PROPERTY_VALUE_MAX];
+	char region[92];
+	char sku[92];
 	property_get("ro.boot.hwc", region, "");
 	property_get("ro.boot.hardware.sku", sku, "");
 
@@ -54,5 +61,4 @@ inline const char* BtmGetDefaultName()
 
 /* Increasing SEPs to 12 from 6 to support SHO/MCast i.e. two streams per codec */
 #define AVDT_NUM_SEPS 12
-#pragma pop_macro("PROPERTY_VALUE_MAX")
 #endif
