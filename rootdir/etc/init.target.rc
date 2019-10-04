@@ -127,6 +127,9 @@ on boot
     chown system system /sys/class/thermal/thermal_message/sconfig
     chown system system /sys/class/thermal/thermal_message/balance_mode
 
+    # Set thermal mode to evaluation
+    write /sys/class/thermal/thermal_message/sconfig 10
+
     # Set xiaomi touch permissions
     chown system system /dev/xiaomi-touch
     chmod 0660 /dev/xiaomi-touch
