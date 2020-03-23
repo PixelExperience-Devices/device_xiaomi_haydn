@@ -20,6 +20,9 @@ $(call inherit-product, device/xiaomi/haydn/device.mk)
 # Inherit some common PixelExperience stuff.
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
+# Boot animation
+TARGET_BOOT_ANIMATION_RES := 1080
+
 # Device identifier
 PRODUCT_NAME := aosp_haydn
 PRODUCT_DEVICE := haydn
