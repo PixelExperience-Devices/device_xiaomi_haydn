@@ -13,3 +13,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+
+# Call the proprietary setup
+$(call inherit-product, vendor/xiaomi/haydn/haydn-vendor.mk)
