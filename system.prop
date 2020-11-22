@@ -11,7 +11,7 @@ persist.vendor.cne.feature=1
 # Graphics
 debug.sf.disable_backpressure=1
 debug.sf.enable_hwc_vds=1
-debug.sf.latch_unsignaled=1
+debug.sf.latch_unsignaled=0
 ro.opengles.version=196610
 
 # IMS
