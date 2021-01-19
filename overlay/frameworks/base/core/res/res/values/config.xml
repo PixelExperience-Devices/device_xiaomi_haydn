@@ -523,7 +523,7 @@
         <item>/apex/com.android.media/javalib/updatable-media.jar</item>
         <item>/system_ext/priv-app/SystemUI/SystemUI.apk</item>
         <item>/system_ext/priv-app/SystemUI/oat/arm64/SystemUI.odex</item>
-        <item>/system/lib64/libsurfaceflinger.so</item>
+        <item>/system/bin/surfaceflinger</item>
         <item>/system/lib64/libRScpp.so</item>
         <item>/system/lib64/libRS.so</item>
         <item>/system/lib64/libRS_internal.so</item>
@@ -541,7 +541,7 @@
         <item>/apex/com.android.art/javalib/core-libart.jar</item>
         <item>/apex/com.android.media/javalib/updatable-media.jar</item>
         <item>/system_ext/priv-app/SystemUI/SystemUI.apk</item>
-        <item>/system/lib64/libsurfaceflinger.so</item>
+        <item>/system/bin/surfaceflinger</item>
     </string-array>
 
     <!-- Configure mobile tcp buffer sizes in the form:
