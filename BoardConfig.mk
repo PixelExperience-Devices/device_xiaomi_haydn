@@ -168,5 +168,8 @@ TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
 # Screen density
 TARGET_SCREEN_DENSITY := 440
 
+# Sepolicy
+include device/qcom/sepolicy_vndr/SEPolicy.mk
+
 # Inherit from proprietary files
 include vendor/xiaomi/haydn/BoardConfigVendor.mk
