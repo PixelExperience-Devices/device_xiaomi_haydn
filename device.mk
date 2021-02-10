@@ -214,6 +214,29 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     netutils-wrapper-1.0
 
+# NFC
+PRODUCT_SOONG_NAMESPACES += \
+    vendor/nxp/opensource/sn100x
+
+PRODUCT_PACKAGES += \
+    com.android.nfc_extras \
+    libchrome.vendor \
+    com.nxp.nfc.nq \
+    NQNfcNci \
+    SecureElement \
+    Tag
+
+PRODUCT_PACKAGES += \
+    android.hardware.secure_element@1.2 \
+    libnqnfc_nci_jni \
+    nfc_nci.nqx.default.hw \
+    vendor.nxp.hardware.nfc@2.0-service
+
+PRODUCT_PACKAGES += \
+    jcos_nq_client \
+    ls_nq_client \
+    se_nq_extn_client
+
 # Partitions
 PRODUCT_BUILD_SUPER_PARTITION := false
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
