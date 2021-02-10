@@ -163,6 +163,10 @@ PRODUCT_PACKAGES += \
     libtinyxml \
     memtrack.default
 
+# DRM
+PRODUCT_PACKAGES += \
+    android.hardware.drm@1.3-service.clearkey
+
 # Fastbootd
 PRODUCT_PACKAGES += \
     fastbootd
