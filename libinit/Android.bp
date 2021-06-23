@@ -1,0 +1,22 @@
+//
+// Copyright (C) 2021 The LineageOS Project
+//
+// SPDX-License-Identifier: Apache-2.0
+//
+
+cc_defaults {
+    name: "libinit_defaults",
+    include_dirs: [
+        "system/core/base/include",
+        "system/core/init"
+    ],
+    shared_libs: ["libbase"],
+    recovery_available: true,
+}
+
+cc_library_static {
+    name: "libinit",
+    defaults: ["libinit_defaults"],
+    srcs: ["libinit.cpp"],
+    export_include_dirs: ["include"],
+}
