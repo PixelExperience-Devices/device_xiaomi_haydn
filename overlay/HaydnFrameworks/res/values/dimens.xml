@@ -16,7 +16,4 @@
     <!-- Height of area above QQS where battery/time go. -->
     <dimen name="quick_qs_offset_height">@dimen/status_bar_height_portrait</dimen>
 
-    <!-- Total height of QQS (quick_qs_offset_height + 352) -->
-    <dimen name="quick_qs_total_height">432px</dimen>
-
 </resources>

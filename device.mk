@@ -370,7 +370,8 @@ PRODUCT_PACKAGES += \
     SystemUIResCommon \
     TelephonyResCommon \
     WifiResCommon \
-    HaydnFrameworks
+    HaydnFrameworks \
+    HaydnSystemUI
 
 # Partitions
 PRODUCT_BUILD_SUPER_PARTITION := false

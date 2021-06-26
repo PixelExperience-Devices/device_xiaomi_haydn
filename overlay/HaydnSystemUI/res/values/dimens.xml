@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2021 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+
+    <!-- The padding on the start of the status bar. -->
+    <dimen name="status_bar_padding_start">16dp</dimen>
+
+    <!-- The padding on the end of the status bar. -->
+    <dimen name="status_bar_padding_end">16dp</dimen>
+
+    <!-- Margin on the left side of the carrier text on Keyguard -->
+    <dimen name="keyguard_carrier_text_margin">@dimen/status_bar_padding_start</dimen>
+
+    <!-- Margin on the right side of the system icon group on Keyguard. -->
+    <dimen name="system_icons_keyguard_padding_end">@dimen/status_bar_padding_end</dimen>
+
+</resources>
