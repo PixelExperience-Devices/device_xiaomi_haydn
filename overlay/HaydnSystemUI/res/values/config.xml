@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2021 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+
+    <!-- Default rounded corner curve (a Bezier). Must match (the curved path in) rounded.xml.
+         Note that while rounded.xml includes the entire path (including the horizontal and vertical
+         corner edges), this pulls out just the curve.
+     -->
+    <string name="config_rounded_mask" translatable="false">
+        M 0.00 0.00 L 130.00 0.00 C 108.27 1.44 86.11 2.31 65.30 9.24 C 47.27 15.17 32.16 27.89 20.89 42.91 C 12.46 54.07 7.69 67.54 5.06 81.17 C 1.98 97.25 1.12 113.66 0 130.00 L 0.00 0 Z
+    </string>
+
+    <!-- Respect drawable/rounded.xml intrinsic size for multiple radius corner path customization -->
+    <bool name="config_roundedCornerMultipleRadius">true</bool>
+
+</resources>
