@@ -367,11 +367,13 @@ PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_PACKAGES += \
     CarrierConfigResCommon \
     FrameworksResCommon \
+    FrameworksResTarget \
+    HaydnFrameworks \
+    HaydnSystemUI \
     SystemUIResCommon \
     TelephonyResCommon \
     WifiResCommon \
-    HaydnFrameworks \
-    HaydnSystemUI
+    WifiResTarget
 
 # Partitions
 PRODUCT_BUILD_SUPER_PARTITION := false
