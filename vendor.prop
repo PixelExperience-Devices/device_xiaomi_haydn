@@ -130,7 +130,7 @@ camera.disable_zsl_mode=true
 
 # Chipset
 ro.soc.manufacturer=QTI
-ro.soc.model=SDM8350
+ro.soc.model=SM8350
 
 # CNE
 persist.vendor.cne.feature=1
