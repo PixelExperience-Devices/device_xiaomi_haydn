@@ -5,5 +5,5 @@
 
 runtime_resource_overlay {
     name: "HaydnFrameworks",
-    product_specific: true,
+    vendor: true,
 }
