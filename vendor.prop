@@ -144,32 +144,6 @@ persist.vendor.cne.feature=1
 ro.crypto.dm_default_key.options_format.version=2
 ro.crypto.volume.metadata.method=dm-default-key
 
-# Display feature
-persist.vendor.dc_backlight.enable=false
-persist.vendor.dc_backlight.threshold=440
-persist.vendor.dfps.level=60
-persist.vendor.power.dfps.level=0
-ro.vendor.all_modes.colorpick_adjust=true
-ro.vendor.cabc.enable=fasle
-ro.vendor.colorpick_adjust=true
-ro.vendor.dfps.enable=false
-ro.vendor.display.ai_disp.enable=true
-ro.vendor.display.default_fps=60
-ro.vendor.display.mi_calib.enable=true
-ro.vendor.display.nature_mode.enable=true
-ro.vendor.display.sensortype=2
-ro.vendor.display.type=oled
-ro.vendor.fps.switch.default=true
-ro.vendor.histogram.enable=true
-ro.vendor.localhbm.enable=true
-ro.vendor.soft_backlight.enable=true
-sys.displayfeature.entry.enable=true
-sys.displayfeature_hidl=true
-ro.vendor.sre.enable=true
-ro.vendor.standard.video.enable=true
-ro.vendor.thermal.dimming.enable=true
-ro.vendor.xiaomi.bl.poll=true
-
 # DPM
 persist.vendor.dpm.feature=1
 persist.vendor.dpm.idletimer.mode=default
@@ -181,6 +155,9 @@ drm.service.enabled=true
 
 # FRP
 ro.frp.pst=/dev/block/bootdevice/by-name/frp
+
+# Gatekeeper
+vendor.gatekeeper.disable_spu=true
 
 # Graphics
 debug.egl.hw=0
@@ -222,6 +199,7 @@ vendor.display.enable_async_powermode=0
 vendor.display.enable_early_wakeup=1
 vendor.display.enable_optimize_refresh=1
 vendor.display.enable_perf_hint_large_comp_cycle=1
+vendor.display.enable_posted_start_dyn=2
 vendor.display.qdcm.mode_combine=2
 vendor.display.use_layer_ext=0
 vendor.display.use_smooth_motion=0
@@ -249,6 +227,8 @@ persist.mm.enable.prefetch=true
 ro.config.media_vol_default=15
 ro.config.media_vol_steps=25
 ro.config.vc_call_vol_steps=11
+ro.media.xml_variant.codecs=_lahaina
+ro.media.xml_variant.codecs_performance=_lahaina
 ro.vendor.media.video.frc.support=true
 ro.vendor.media.video.vpp.support=true
 vendor.media.vpp.aie.cade=100
@@ -261,6 +241,7 @@ vendor.media.vpp.aie.ltmsatoff=55
 vendor.media.vpp.debug.value.use=false
 vendor.mm.enable.qcom_parser=16777215
 vendor.mm.enable.qcom_parser=63963135
+vendor.media.target_variant=_lahaina
 
 # NFC
 ro.nfc.port=I2C
@@ -310,6 +291,7 @@ ril.subscription.types=NV,RUIM
 rild.libpath=/vendor/lib64/libril-qc-hal-qmi.so
 ro.telephony.default_cdma_sub=0
 ro.telephony.default_network=22,22
+ro.telephony.call_ring.multiple=false
 ro.vendor.radio.5g=3
 ro.vendor.use_data_netmgrd=true
 telephony.lteOnCdmaDevice=1
@@ -319,17 +301,14 @@ persist.vendor.sensors.allow_non_default_discovery=true
 persist.vendor.sensors.on_change_sample_period=true
 persist.vendor.sensors.sync_request=true
 
-# SSR
-persist.vendor.ssr.restart_level=ALL_ENABLE
+# SKU
+ro.boot.product.vendor.sku=lahaina
 
 # Storage
 ro.incremental.enable=yes
 
 # Thermal
 vendor.sys.thermal.data.path=/data/vendor/thermal/
-
-# Touchfeature
-ro.vendor.touchfeature.type=55
 
 # USB
 vendor.usb.diag.func.name=ffs
@@ -340,6 +319,7 @@ wifi.aware.interface=wifi-aware0
 ro.vendor.net.enable_dual_wifi=1
 ro.vendor.net.enable_passpoint_r1=1
 ro.vendor.net.enable_sla=1
+wifi.interface=wlan0
 
 # Wifi Display
 persist.debug.wfd.enable=1
