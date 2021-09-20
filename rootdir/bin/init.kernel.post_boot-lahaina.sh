@@ -61,7 +61,7 @@ function configure_zram_parameters() {
 		if [ -f /sys/block/zram0/use_dedup ]; then
 			echo 1 > /sys/block/zram0/use_dedup
 		fi
-		# echo "$zRamSizeMB""$diskSizeUnit" > /sys/block/zram0/disksize
+		echo "$zRamSizeMB""$diskSizeUnit" > /sys/block/zram0/disksize
 
 		# ZRAM may use more memory than it saves if SLAB_STORE_USER
 		# debug option is enabled.
@@ -183,9 +183,6 @@ echo 0-3 > /dev/cpuset/system-background/cpus
 echo 4-7 > /dev/cpuset/foreground/boost/cpus
 echo 0-2,4-7 > /dev/cpuset/foreground/cpus
 echo 0-7 > /dev/cpuset/top-app/cpus
-
-# Turn off scheduler boost at the end
-echo 0 > /proc/sys/kernel/sched_boost
 
 # configure governor settings for silver cluster
 echo "schedutil" > /sys/devices/system/cpu/cpufreq/policy0/scaling_governor
@@ -342,7 +339,6 @@ do
 done
 echo N > /sys/module/lpm_levels/parameters/sleep_disabled
 echo deep > /sys/power/mem_sleep
-
 configure_memory_parameters
 
 # Let kernel know our image version/variant/crm_version
@@ -360,17 +356,5 @@ if [ -f /sys/devices/soc0/select_image ]; then
 	echo $image_variant > /sys/devices/soc0/image_variant
 	echo $oem_version > /sys/devices/soc0/image_crm_version
 fi
-
-# Change console log level as per console config property
-console_config=`getprop persist.console.silent.config`
-case "$console_config" in
-	"1")
-		echo "Enable console config to $console_config"
-		echo 0 > /proc/sys/kernel/printk
-	;;
-	*)
-		echo "Enable console config to $console_config"
-	;;
-esac
 
 setprop vendor.post_boot.parsed 1
