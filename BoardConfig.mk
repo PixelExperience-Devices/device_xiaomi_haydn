@@ -78,6 +78,20 @@ BOARD_MKBOOTIMG_ARGS := --header_version $(BOARD_BOOT_HEADER_VERSION)
 # DTBO
 BOARD_KERNEL_SEPARATED_DTBO := true
 
+# HIDL
+DEVICE_MATRIX_FILE := $(DEVICE_PATH)/vintf/compatibility_matrix.xml
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
+    $(DEVICE_PATH)/vintf/framework_compatibility_matrix.xml \
+    vendor/aosp/config/device_framework_matrix.xml
+
+ODM_MANIFEST_FILES := $(DEVICE_PATH)/vintf/manifest.xml
+DEVICE_FRAMEWORK_MANIFEST_FILE := $(DEVICE_PATH)/vintf/framework_manifest.xml
+DEVICE_MANIFEST_FILE := \
+    $(DEVICE_PATH)/vintf/manifest_lahaina.xml \
+    $(DEVICE_PATH)/vintf/android.hardware.ir@1.0-service.xml \
+    $(DEVICE_PATH)/vintf/c2_manifest_vendor.xml \
+    $(DEVICE_PATH)/vintf/fod.xml
+
 # Kernel
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_IMAGE_NAME := Image
