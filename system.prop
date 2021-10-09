@@ -50,6 +50,7 @@ ro.nfc.port=I2C
 DEVICE_PROVISIONED=1
 keyguard.no_require_sim=true
 persist.rmnet.data.enable=true
+persist.sys.fflag.override.settings_provider_model=false
 persist.vendor.data.mode=concurrent
 persist.vendor.overlay.izat.optin=rro
 persist.vendor.radio.atfwd.start=true
