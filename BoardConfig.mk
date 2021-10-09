@@ -185,6 +185,9 @@ TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
 # Screen density
 TARGET_SCREEN_DENSITY := 440
 
+# Security patch level
+VENDOR_SECURITY_PATCH := 2021-07-01
+
 # Sepolicy
 include device/qcom/sepolicy_vndr/SEPolicy.mk
 
