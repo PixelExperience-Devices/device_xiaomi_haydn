@@ -250,6 +250,10 @@ VENDOR_SECURITY_PATCH := 2021-07-01
 # Sepolicy
 include device/qcom/sepolicy_vndr/SEPolicy.mk
 
+BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
+BOARD_PLAT_PUBLIC_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/public
+BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
+
 # Treble
 BOARD_VNDK_VERSION := current
 
