@@ -1,0 +1,17 @@
+[
+ {
+   "repository" : "EcrosoftXiao/vendor_xiaomi_haydn",
+   "target_path": "vendor/xiaomi/haydn",
+   "branch"     : "eleven"
+ },
+ {
+   "repository" : "EcrosoftXiao/kernel_xiaomi_haydn",
+   "target_path": "kernel/xiaomi/haydn",
+   "branch"     : "eleven"
+ },
+ {
+   "repository" : "LineageOS/android_hardware_xiaomi",
+   "target_path": "hardware/xiaomi",
+   "branch"     : "lineage-18.1"
+ }
+]
