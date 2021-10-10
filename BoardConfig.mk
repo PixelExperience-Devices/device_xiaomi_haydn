@@ -84,5 +84,8 @@ BOARD_USES_QCOM_HARDWARE := true
 # Releasetools
 TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
 
+# Screen density
+TARGET_SCREEN_DENSITY := 440
+
 # Inherit from proprietary files
 include vendor/xiaomi/haydn/BoardConfigVendor.mk
