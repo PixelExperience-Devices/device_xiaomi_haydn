@@ -125,7 +125,9 @@ on early-boot
     start vendor.sensors
 
 on boot
+    # Set default thermal mode
     chown system system /sys/class/thermal/thermal_message/sconfig
+    write /sys/class/thermal/thermal_message/sconfig 10
 
     write /dev/cpuset/audio-app/cpus 1-2
 
