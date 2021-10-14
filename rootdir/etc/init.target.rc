@@ -73,9 +73,9 @@ on early-fs
     exec_background u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules/ cnss2
 
 on boot && property:ro.boot.product.hardware.sku=nfc
-    enable nqnfc_2_0_hal_service
     enable qti_esepowermanager_service_1_1
     enable secureelement-hal_1_2
+    enable vendor.nfc_hal_service
 
 on fs
     start hwservicemanager
@@ -190,13 +190,6 @@ service vendor.nv_mac /vendor/bin/nv_mac
     group system inet net_admin wifi net_raw
     oneshot
 
-service nqnfc_2_0_hal_service /vendor/bin/hw/vendor.nxp.hardware.nfc@2.0-service
-    override
-    class hal
-    user nfc
-    group nfc
-    disabled
-
 service qti_esepowermanager_service_1_1 /vendor/bin/hw/vendor.qti.esepowermanager@1.1-service
     override
     class hal
@@ -209,4 +202,11 @@ service secureelement-hal_1_2 /vendor/bin/hw/vendor.qti.secure_element@1.2-servi
     class hal
     user system
     group system
+    disabled
+
+service vendor.nfc_hal_service /vendor/bin/hw/android.hardware.nfc_snxxx@1.2-service
+    override
+    class hal
+    user nfc
+    group nfc
     disabled
