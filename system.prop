@@ -20,7 +20,7 @@ persist.dbg.vt_avail_ovr=1
 persist.dbg.wfc_avail_ovr=1
 
 # Iorap
-ro.iorapd.enable=false
+persist.device_config.runtime_native_boot.iorap_readahead_enable=true
 
 # Media
 debug.stagefright.ccodec=1
