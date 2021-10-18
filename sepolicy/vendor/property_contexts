@@ -1,2 +1,6 @@
+# Camera
+vendor.camera.sensor.    u:object_r:vendor_camera_sensor_prop:s0
+ro.boot.camera.config    u:object_r:vendor_camera_sensor_prop:s0
+
 # SPU
 persist.vendor.security.spuari.              u:object_r:vendor_security_spuari_prop:s0
