@@ -17,8 +17,8 @@ cc_library_static {
 }
 
 cc_library_static {
-    name: "init_xiaomi",
-    srcs: ["init_xiaomi.cpp"],
+    name: "init_haydn",
+    srcs: ["init_haydn.cpp"],
     whole_static_libs: ["libinit_xiaomi"],
     include_dirs: ["system/core/init"],
     recovery_available: true,

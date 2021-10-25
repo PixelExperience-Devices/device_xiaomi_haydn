@@ -140,6 +140,10 @@ DEVICE_MANIFEST_FILE := \
     $(DEVICE_PATH)/vintf/c2_manifest_vendor.xml \
     $(DEVICE_PATH)/vintf/fod.xml
 
+# Init
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):init_haydn
+TARGET_RECOVERY_DEVICE_MODULES := init_haydn
+
 # Kernel
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_IMAGE_NAME := Image
