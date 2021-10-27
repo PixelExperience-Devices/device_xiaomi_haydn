@@ -102,6 +102,7 @@ BOARD_USES_QCOM_HARDWARE := true
 # Recovery
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 BOARD_USES_RECOVERY_AS_BOOT := true
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 TARGET_USES_MKE2FS := true
 
 # Screen density
