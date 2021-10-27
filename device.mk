@@ -7,6 +7,10 @@
 # Call the proprietary setup
 $(call inherit-product, vendor/xiaomi/haydn/haydn-vendor.mk)
 
+# AID/fs configs
+PRODUCT_PACKAGES += \
+    fs_config_files
+
 # API level
 PRODUCT_SHIPPING_API_LEVEL := 30
 
