@@ -4,6 +4,9 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+# Call the proprietary setup
+$(call inherit-product, vendor/xiaomi/haydn/haydn-vendor.mk)
+
 # API level
 PRODUCT_SHIPPING_API_LEVEL := 30
 
