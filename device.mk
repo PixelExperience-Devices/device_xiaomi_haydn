@@ -46,6 +46,10 @@ PRODUCT_PACKAGES += \
 # API level
 PRODUCT_SHIPPING_API_LEVEL := 30
 
+# Boot animation
+TARGET_SCREEN_HEIGHT := 2400
+TARGET_SCREEN_WIDTH := 1080
+
 # Boot control
 PRODUCT_PACKAGES += \
     android.hardware.boot@1.1-impl-qti \
