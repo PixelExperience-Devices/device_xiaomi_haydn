@@ -1,0 +1,4 @@
+allow platform_app vendor_sysfs_kgsl:dir { read getattr search open };
+allow platform_app vendor_sysfs_kgsl:{ file lnk_file }  r_file_perms;
+allow platform_app sysfs_msm_subsys:dir { read getattr search open };
+allow platform_app sysfs_msm_subsys:{ file lnk_file }  r_file_perms;

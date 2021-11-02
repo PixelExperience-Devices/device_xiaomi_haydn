@@ -1,0 +1,7 @@
+allow hal_memtrack_default {
+    vendor_sysfs_kgsl
+}:dir search;
+
+allow hal_memtrack_default {
+    vendor_sysfs_kgsl
+}:{ file lnk_file } rw_file_perms;
