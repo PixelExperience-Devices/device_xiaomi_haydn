@@ -1,0 +1,1 @@
+allow hal_sensors_default hal_audio_default:unix_stream_socket connectto;
