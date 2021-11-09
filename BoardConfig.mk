@@ -23,6 +23,9 @@ BUILD_BROKEN_DUP_RULES := true
 # APEX
 DEXPREOPT_GENERATE_APEX_IMAGE := true
 
+# ANT+
+BOARD_ANT_WIRELESS_DEVICE := "qualcomm-hidl"
+
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-2a
