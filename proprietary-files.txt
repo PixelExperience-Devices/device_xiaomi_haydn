@@ -1555,9 +1555,9 @@ vendor/bin/time_daemon
 vendor/etc/init/init.time_daemon.rc
 vendor/lib64/libtime_genoff.so
 
-# Touchscreen firmware
-vendor/firmware/focaltech_ts_fw.bin
-vendor/firmware/focaltech_ts_ht_fw.bin
+# Touchscreen firmware - from miui_HAYDN_V12.5.7.0.RKKCNXM
+vendor/firmware/focaltech_ts_fw.bin|b40a538ff55eaa4f28c78cc63ea82a1774c73821
+vendor/firmware/focaltech_ts_ht_fw.bin|99bb2bc460b1484eccc89379de6d53b5c8cd6103
 
 # Trusted Execution Environment connector
 vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service
