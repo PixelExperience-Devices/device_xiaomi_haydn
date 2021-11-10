@@ -118,23 +118,23 @@ vendor/firmware/spk2_voice_delta.txt
 vendor/lib/soundfx/libasphere.so
 vendor/lib/soundfx/libshoebox.so
 
-# Bluetooth
-vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
-vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
-vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so
-vendor/lib64/libbtnv.so
-vendor/lib64/libsoc_helper.so
+# Bluetooth - from OnePlus9Oxygen_22.O.12
+vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti|023cea7c25b2cda988dfba1a02e7040718555405
+vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc|f4ee3b2da2b08647447869ade86ec63f7340accc
+vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so|03f6499a3cee494e6e697fc8ddecfda29bdc2026
+vendor/lib64/libbtnv.so|a11ad85d4e48d8ed8be3aadde66af02078ae3575
+vendor/lib64/libsoc_helper.so|c88ef182b4239a306ca67eec194585b8e21bb498
 
-# Bluetooth (A2DP)
-vendor/lib/hw/audio.bluetooth_qti.default.so
-vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so
-vendor/lib/btaudio_offload_if.so
-vendor/lib/libbluetooth_audio_session_qti.so
-vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so
-vendor/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so
-vendor/lib64/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so
-vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so
-vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so
+# Bluetooth (A2DP) - from OnePlus9Oxygen_22.O.12
+vendor/lib/hw/audio.bluetooth_qti.default.so|691f3c46cbee65b349e5ea172192aef39e399483
+vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so|f7bc5d5a1193e4f2c0a41b07d1d5c2d5f8a22e85
+vendor/lib/btaudio_offload_if.so|be9b81e4f5a6ff22ea2d9a456a6eb1640edae196
+vendor/lib/libbluetooth_audio_session_qti.so|1f94f091c3c0c0d919e8d686169462e81f797fde
+vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so|f98b653e203215bf43192c1a8421dc534a381050
+vendor/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so|1fa00a3ed812314975694e74009e3bcf16a0d493
+vendor/lib64/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so|8229b1708523316c9066c5b586c65640277e2f58
+vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so|e082a6912f31fd067210516624548c8981c71ead
+vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so|9b625b804b65377c6986111811fa29e9ec71c692
 
 
 # Camera
