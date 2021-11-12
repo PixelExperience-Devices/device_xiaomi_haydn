@@ -150,6 +150,7 @@ persist.vendor.dpmhalservice.enable=1
 drm.service.enabled=true
 
 # Fingerprint
+persist.vendor.sys.fp.vendor=fpc
 ro.hardware.fingerprint=fpc
 
 # FRP
