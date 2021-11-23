@@ -11,7 +11,7 @@
 
 
 static const variant_info_t haydnin_info = {
-    .hwc_value = "INDIA",
+    .hwc_value = "IN",
     .sku_value = "",
 
     .brand = "Xiaomi",
@@ -25,7 +25,7 @@ static const variant_info_t haydnin_info = {
 };
 
 static const variant_info_t haydnglobal_info = {
-    .hwc_value = "GLOBAL",
+    .hwc_value = "GL",
     .sku_value = "",
 
     .brand = "Xiaomi",
