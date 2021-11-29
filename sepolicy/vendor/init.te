@@ -11,3 +11,5 @@ allow init proc_last_kmsg:file {
 };
 
 allow init adsprpcd_file:file mounton;
+
+allow init property_type:file { append create getattr map open read relabelto rename setattr unlink write };
