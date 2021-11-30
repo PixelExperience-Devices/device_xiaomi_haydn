@@ -5,6 +5,12 @@
    "branch"     : "eleven"
  },
  {
+   "repository" : "vendor_xiaomi_sdm845-common-extra",
+   "target_path": "vendor/xiaomi/sdm845-common-extra",
+   "branch"     : "twelve",
+   "remote"     : "pixel-devices-blobs"
+ },
+ {
    "repository" : "EcrosoftXiao/kernel_xiaomi_haydn",
    "target_path": "kernel/xiaomi/haydn",
    "branch"     : "eleven"
