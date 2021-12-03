@@ -86,6 +86,7 @@ void vendor_load_properties() {
     std::string description;
     std::string marketname;
     std::string mod_device;
+    std::string product_sku;
 
     if (region == "IN") {
         model = "M2012K11I";
@@ -106,6 +107,7 @@ void vendor_load_properties() {
             } else {
                 marketname = "Redmi K40 Pro";
             }
+            product_sku= "nfc";
     } else {
         model = "M2012K11G";
         brand = "Xiaomi";
@@ -114,6 +116,7 @@ void vendor_load_properties() {
         description = "haydn-user 11 RKQ1.201112.002 V12.5.4.0.RKKMIXM release-keys";
         marketname = "Mi 11i Global";
         mod_device = "haydn_global";
+        product_sku= "nfc";
     }
 
     set_ro_build_prop("fingerprint", fingerprint);
@@ -125,5 +128,8 @@ void vendor_load_properties() {
     property_override("ro.build.description", description.c_str());
     if (mod_device != "") {
         property_override("ro.product.mod_device", mod_device.c_str());
+    }
+    if (product_sku != "") {
+        property_override("ro.boot.product.hardware.sku", product_sku.c_str());
     }
 }
