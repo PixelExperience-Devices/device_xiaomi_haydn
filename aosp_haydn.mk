@@ -35,3 +35,6 @@ PRODUCT_MODEL := Redmi K40 Pro
 PRODUCT_MANUFACTURER := Xiaomi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+
+# Recovery
+TARGET_USES_AOSP_RECOVERY := true
