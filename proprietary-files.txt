@@ -955,7 +955,7 @@ system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml|563a585
 system_ext/framework/com.android.hotwordenrollment.common.util.jar|bef92589e75a6da6043f85f4b9b0e85866429624
 
 # IMS
-system_ext/lib64/lib-imsvideocodec.so
+system_ext/lib64/lib-imsvideocodec.so|f558c99aa8e29c7b1abe6d4e9436059ecabf26b2
 system_ext/lib64/lib-imsvt.so
 system_ext/lib64/lib-imsvtextutils.so
 system_ext/lib64/lib-imsvtutils.so
