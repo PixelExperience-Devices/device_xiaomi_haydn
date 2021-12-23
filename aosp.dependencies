@@ -1,8 +1,9 @@
 [
  {
-   "repository" : "EcrosoftXiao/vendor_xiaomi_haydn",
+   "repository" : "vendor_xiaomi_haydn",
    "target_path": "vendor/xiaomi/haydn",
-   "branch"     : "eleven"
+   "remote"     : "pixel-devices-blobs",
+   "branch"     : "twelve"
  },
  {
    "repository" : "vendor_xiaomi_sdm845-common-extra",
@@ -11,13 +12,13 @@
    "remote"     : "pixel-devices-blobs"
  },
  {
-   "repository" : "EcrosoftXiao/kernel_xiaomi_haydn",
+   "repository" : "kernel_xiaomi_haydn",
    "target_path": "kernel/xiaomi/haydn",
-   "branch"     : "eleven"
+   "branch"     : "twelve"
  },
  {
-   "repository" : "LineageOS/android_hardware_xiaomi",
+   "repository" : "PixelExperience/hardware_xiaomi",
    "target_path": "hardware/xiaomi",
-   "branch"     : "lineage-18.1"
+   "branch"     : "twelve"
  }
 ]
