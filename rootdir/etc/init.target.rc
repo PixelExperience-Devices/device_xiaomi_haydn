@@ -149,6 +149,10 @@ on boot
     chmod 0660 /sys/touchpanel/double_tap
     chown system system /sys/touchpanel/double_tap
 
+on property:sys.boot_completed=1
+    # ZRAM configuration
+    swapon_all /vendor/etc/fstab.qcom
+
 on boot && property:persist.vendor.usb.controller.default=*
     setprop vendor.usb.controller ${persist.vendor.usb.controller.default}
 
