@@ -20,5 +20,11 @@
    "repository" : "PixelExperience/hardware_xiaomi",
    "target_path": "hardware/xiaomi",
    "branch"     : "twelve"
+ },
+ {
+   "repository" : "jjpprrrr/prelude-clang",
+   "target_path": "prebuilts/clang/host/linux-x86/clang-prelude",
+   "branch"     : "master",
+   "remote"     : "gitlab"
  }
 ]
