@@ -735,7 +735,7 @@ vendor/lib64/libtinyxml2_1.so|11ceb3f1e7650c41621d47e5ec5567c8f466086e
 vendor/bin/qdcmss
 vendor/etc/init/qdcmss.rc
 vendor/etc/ltm_config_xiaomi_38_08_0a_cmd_mode_dsc_dsi_panel.xml
-vendor/etc/qdcm_calib_data_xiaomi_38_08_0a_cmd_mode_dsc_dsi_panel.xml
+vendor/etc/qdcm_calib_data_xiaomi_38_08_0a_cmd_mode_dsc_dsi_panel.xml|e959d6294ec8075d8c0460c7cdf4d6368bed3731
 
 # Display postprocessing
 vendor/bin/hw/vendor.display.color@1.0-service
