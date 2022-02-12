@@ -240,3 +240,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES_DEBUG += \
     update_engine_client
+
+# Vulkan
+PRODUCT_PACKAGES += \
+    libvulkan
