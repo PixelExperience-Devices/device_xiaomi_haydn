@@ -58,6 +58,9 @@ function blob_fixup() {
         vendor/etc/camera/pureShot_parameter.xml)
             sed -i 's/=\([0-9]\+\)>/="\1">/g' "${2}"
             ;;
+        system_ext/lib64/libwfdnative.so)
+            patchelf --remove-needed "android.hidl.base@1.0.so" "${2}"
+            ;;
     esac
 }
 
