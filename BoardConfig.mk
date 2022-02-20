@@ -108,7 +108,9 @@ BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 BOOT_KERNEL_MODULES := \
     hwid.ko \
     fts_touch_spi.ko \
-    focaltech_touch.ko
+    focaltech_touch.ko \
+    xiaomi_touch.ko
+
 BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD := $(BOOT_KERNEL_MODULES)
 
 # Media
