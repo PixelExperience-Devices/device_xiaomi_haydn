@@ -856,6 +856,12 @@ vendor/firmware/a660_zap.b02
 vendor/firmware/a660_zap.elf
 vendor/firmware/a660_zap.mdt
 
+# HotwordEnrollment
+-product/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogleHEXAGON.apk
+-product/priv-app/HotwordEnrollmentXGoogleHEXAGON/HotwordEnrollmentXGoogleHEXAGON.apk
+system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml
+system_ext/framework/com.android.hotwordenrollment.common.util.jar
+
 # Keymaster
 vendor/bin/hw/android.hardware.keymaster@4.1-service-qti
 vendor/etc/init/android.hardware.keymaster@4.1-service-qti.rc
@@ -864,6 +870,20 @@ vendor/lib64/libkeymasterprovision.so
 vendor/lib64/libkeymasterutils.so
 vendor/lib64/libqtikeymaster4.so
 vendor/lib64/libspcom.so
+
+# Listen
+vendor/lib/hw/sound_trigger.primary.lahaina.so
+vendor/lib/libadpcmdec.so
+vendor/lib/libcapiv2svacnn.so
+vendor/lib/libcapiv2svarnn.so
+vendor/lib/libcapiv2vop.so
+vendor/lib/libgcs-calwrapper.so
+vendor/lib/libgcs-ipc.so
+vendor/lib/libgcs-osal.so
+vendor/lib/libgcs.so
+vendor/lib/liblistensoundmodel2.so
+vendor/lib/libmulawdec.so
+vendor/lib/libsmwrapper.so
 
 # Media
 -vendor/etc/vintf/manifest/c2_manifest_vendor.xml
