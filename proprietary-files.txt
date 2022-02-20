@@ -1096,6 +1096,37 @@ vendor/etc/sensors/hals.conf
 vendor/etc/sensors/judge_calibrated.json
 vendor/etc/sensors/sns_reg_config
 
+# Thermal
+vendor/bin/mi_thermald
+vendor/bin/thermal-engine
+vendor/etc/init/hw/init.mi_thermald.rc
+vendor/etc/init/init_thermal-engine.rc
+vendor/etc/thermal-camera.conf
+vendor/etc/thermal-class0.conf
+vendor/etc/thermal-engine.conf
+vendor/etc/thermal-india-camera.conf
+vendor/etc/thermal-india-class0.conf
+vendor/etc/thermal-india-mgame.conf
+vendor/etc/thermal-india-navigation.conf
+vendor/etc/thermal-india-nolimits.conf
+vendor/etc/thermal-india-normal.conf
+vendor/etc/thermal-india-phone.conf
+vendor/etc/thermal-india-tgame.conf
+vendor/etc/thermal-india-video.conf
+vendor/etc/thermal-map-india.conf
+vendor/etc/thermal-map.conf
+vendor/etc/thermal-mgame.conf
+vendor/etc/thermal-navigation.conf
+vendor/etc/thermal-nolimits.conf
+vendor/etc/thermal-normal.conf
+vendor/etc/thermal-phone.conf
+vendor/etc/thermal-region-map.conf
+vendor/etc/thermal-tgame.conf
+vendor/etc/thermal-video.conf
+vendor/etc/thermald-devices.conf
+-vendor/lib/libthermalclient.so
+-vendor/lib64/libthermalclient.so
+
 # Trusted Execution Environment connector
 vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service
 vendor/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc
