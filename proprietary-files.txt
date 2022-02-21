@@ -703,6 +703,35 @@ vendor/etc/init/dpmQmiMgr.rc
 vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so
 vendor/lib64/libdpmqmihal.so
 
+# DRM
+vendor/bin/qseecomd
+vendor/etc/init/qseecomd.rc
+vendor/lib64/libGPreqcancel.so
+vendor/lib64/libGPreqcancel_svc.so
+vendor/lib64/libQSEEComAPI.so
+vendor/lib64/libcpion.so
+vendor/lib64/libdrmfs.so
+vendor/lib64/libdrmtime.so
+vendor/lib64/libminkdescriptor.so
+vendor/lib64/libminksocket.so
+vendor/lib64/liboemcrypto.so
+vendor/lib64/libops.so
+vendor/lib64/libqcbor.so
+vendor/lib64/libqisl.so
+vendor/lib64/librpmb.so
+vendor/lib64/libspcom.so
+vendor/lib64/libspl.so
+vendor/lib64/libssd.so
+vendor/lib64/libtrustedapploader.so
+
+# DRM Widevine
+vendor/bin/hw/android.hardware.drm@1.3-service.widevine
+vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc
+-vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml
+vendor/etc/gpfspath_oem_config.xml
+vendor/lib64/mediadrm/libwvdrmengine.so
+vendor/lib64/libwvhidl.so
+
 # DSP
 vendor/bin/dspservice
 vendor/etc/init/vendor.qti.hardware.dsp@1.0-service.rc
