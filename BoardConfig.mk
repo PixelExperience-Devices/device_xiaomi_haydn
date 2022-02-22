@@ -67,6 +67,11 @@ TARGET_NO_BOOTLOADER := true
 # Camera
 TARGET_USES_QTI_CAMERA_DEVICE := true
 
+# Display
+TARGET_USES_DISPLAY_RENDER_INTENTS := true
+TARGET_USES_GRALLOC4 := true
+TARGET_USES_HWC2 := true
+
 # Filesystem
 TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/configs/config.fs
 
