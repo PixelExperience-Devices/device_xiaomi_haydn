@@ -1440,6 +1440,14 @@ vendor/lib64/libGPTEE_vendor.so
 vendor/lib64/libQTEEConnector_vendor.so
 vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so
 
+# Vibrator effects
+vendor/firmware/seq_bin_wav1.bin
+vendor/firmware/seq_bin_wav2.bin
+vendor/firmware/seq_bin_wav3.bin
+vendor/firmware/seq_bin_wav4.bin
+vendor/firmware/seq_bin_wav5.bin
+vendor/firmware/seq_bin_wav6.bin
+
 # Vibrator firmware
 vendor/firmware/aw8697_haptic.bin
 vendor/firmware/aw8697_rtp_1.bin
