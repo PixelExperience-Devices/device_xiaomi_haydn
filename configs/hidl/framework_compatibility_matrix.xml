@@ -328,6 +328,14 @@
         <instance>slot2</instance>
     </interface>
 </hal>
+<hal format="hidl" optional="true">
+    <name>vendor.qti.hardware.soter</name>
+    <version>1.0</version>
+    <interface>
+        <name>ISoter</name>
+        <instance>default</instance>
+    </interface>
+</hal>
 <hal format="hidl">
     <name>vendor.qti.hardware.radio.uim</name>
     <version>1.0-2</version>
@@ -428,6 +436,14 @@
     <version>1.0</version>
     <interface>
         <name>IMiPostProcService</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>vendor.xiaomi.hardware.mlipay</name>
+    <version>1.1</version>
+    <interface>
+        <name>IMlipayService</name>
         <instance>default</instance>
     </interface>
 </hal>
