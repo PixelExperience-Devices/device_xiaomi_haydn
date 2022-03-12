@@ -587,6 +587,10 @@ vendor/lib64/libcacertclient.so
 vendor/lib64/libjnihelper.so
 vendor/lib64/vendor.qti.hardware.cacert@1.0.so
 
+# Charger (Battery secret)
+vendor/bin/batterysecret
+vendor/etc/init/hw/init.batterysecret.rc
+
 # CNE
 -vendor/app/CneApp/CneApp.apk
 -vendor/app/IWlanService/IWlanService.apk
