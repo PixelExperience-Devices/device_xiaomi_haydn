@@ -1,4 +1,5 @@
-type vendor_camera_sensor_prop, property_type;
+vendor_internal_prop(vendor_camera_sensor_prop)
+
 type camera_persist_file, vendor_persist_type, file_type;
 
 set_prop(hal_camera_default, vendor_camera_sensor_prop)
