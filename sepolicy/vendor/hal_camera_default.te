@@ -1,4 +1,4 @@
-vendor_internal_prop(vendor_camera_sensor_prop)
+vendor_public_prop(vendor_camera_sensor_prop)
 
 type camera_persist_file, vendor_persist_type, file_type;
 type hal_camerapostproc_xiaomi_hwservice, hwservice_manager_type;
