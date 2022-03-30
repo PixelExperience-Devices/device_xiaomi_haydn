@@ -18,6 +18,6 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/aosp_haydn.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_haydn-user \
-    aosp_haydn-userdebug \
-    aosp_haydn-eng
+    lineage_haydn-user \
+    lineage_haydn-userdebug \
+    lineage_haydn-eng
