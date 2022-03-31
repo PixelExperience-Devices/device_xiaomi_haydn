@@ -7,7 +7,11 @@ genfscon sysfs /devices/platform/soc/soc:fingerprint_fpc/request_vreg           
 genfscon sysfs /devices/platform/soc/soc:fingerprint_fpc/wakeup_enable          u:object_r:vendor_sysfs_fingerprint:s0
 
 # Power
+genfscon sysfs /class/qcom-battery/pd_verifed                                   u:object_r:vendor_sysfs_battery_supply:s0
+genfscon sysfs /class/qcom-battery/verify_process                               u:object_r:vendor_sysfs_battery_supply:s0
+genfscon sysfs /class/qcom-battery/request_vdm_cmd                              u:object_r:vendor_sysfs_battery_supply:s0
 genfscon sysfs /class/qcom-battery/wlscharge_control_limit                      u:object_r:vendor_sysfs_battery_supply:s0
+genfscon sysfs /devices/platform/soc/soc:qcom,pmic_glink/soc:qcom,pmic_glink:qcom,ucsi/typec/port0/data_role                            u:object_r:vendor_sysfs_battery_supply:s0
 
 # Wakeup
 genfscon sysfs /devices/platform/dummy_hcd.0/usb1/wakeup                                                                                u:object_r:sysfs_wakeup:s0
