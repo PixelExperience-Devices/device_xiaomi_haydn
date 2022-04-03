@@ -14,6 +14,9 @@ BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 # Inherit from proprietary files
 include vendor/xiaomi/haydn/BoardConfigVendor.mk
 
+# Inherit from proprietary files for miuicamera
+-include vendor/xiaomi/haydn-miuicamera/products/board.mk
+
 # A/B
 AB_OTA_UPDATER := true
 
