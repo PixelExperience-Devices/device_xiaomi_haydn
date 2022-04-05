@@ -58,6 +58,9 @@ function blob_fixup() {
         vendor/etc/camera/pureShot_parameter.xml)
             sed -i 's/=\([0-9]\+\)>/="\1">/g' "${2}"
             ;;
+        vendor/etc/vintf/manifest/c2_manifest_vendor.xml)
+            sed -ni '/ozoaudio/!p' "${2}"
+            ;;
         vendor/lib64/hw/camera.xiaomi.so)
             hexdump -ve '1/1 "%.2X"' "${2}" | sed "s/52070094/1F2003D5/g" | xxd -r -p > "${TMPDIR}/${1##*/}"
             mv "${TMPDIR}/${1##*/}" "${2}"
