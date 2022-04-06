@@ -909,6 +909,9 @@ vendor/firmware/a660_zap.mdt
 system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml
 system_ext/framework/com.android.hotwordenrollment.common.util.jar
 
+# IFAA Service
+-vendor/app/IFAAService/IFAAService.apk
+
 # IMS
 -system_ext/app/ImsRcsService/ImsRcsService.apk
 system_ext/etc/permissions/vendor.qti.ims.rcsservice.xml
