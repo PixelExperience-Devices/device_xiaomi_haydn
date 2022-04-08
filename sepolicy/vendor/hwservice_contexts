@@ -1,2 +1,5 @@
 # Mlipay
 vendor.xiaomi.hardware.mlipay::IMlipayService                                 u:object_r:hal_mlipay_hwservice:s0
+
+# Xiaomi Postproc
+vendor.xiaomi.hardware.campostproc::IMiPostProcService                        u:object_r:hal_camerapostproc_xiaomi_hwservice:s0
