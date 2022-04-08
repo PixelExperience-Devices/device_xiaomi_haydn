@@ -127,6 +127,7 @@ vendor.bluetooth.soc=hastings
 
 # Camera
 camera.disable_zsl_mode=true
+ro.hardware.camera=xiaomi
 
 # Chipset
 ro.soc.manufacturer=QTI
