@@ -92,28 +92,31 @@ void vendor_load_properties() {
         model = "M2012K11I";
         brand = "Xiaomi";
         device = "haydnin";
-        fingerprint = "Xiaomi/haydn_in/haydnin:11/RKQ1.201112.002/V12.5.4.0.RKKINXM:user/release-keys";
-        description = "haydnin-user 11 RKQ1.201112.002 V12.5.4.0.RKKINXM release-keys";
+        fingerprint = "Xiaomi/haydn_in/haydnin:12/SKQ1.211001.001/V13.0.1.0.SKKINXM:user/release-keys";
+        description = "haydnin-user 12 SKQ1.211001.001 V13.0.1.0.SKKINXM release-keys";
         marketname = "Mi 11X Pro";
         mod_device = "haydn_in_global";
     } else if (region == "CN") {
             model = "M2012K11C";
             brand = "Redmi";
             device = "haydn";
-            fingerprint = "Redmi/haydn/haydn:11/RKQ1.201112.002/V12.5.5.0.RKKCNXM:user/release-keys";
-            description = "haydn-user 11 RKQ1.201112.002 V12.5.5.0.RKKCNXM release-keys";
             if ( sku == "haydnpro" ) {
+                fingerprint = "Redmi/haydnpro/haydn:12/SKQ1.211001.001/V13.0.6.0.SKKCNXM:user/release-keys";
+                description = "haydnpro-user 12 SKQ1.211001.001 V13.0.6.0.SKKCNXM release-keys";
                 marketname = "Redmi K40 Pro+";
             } else {
+                fingerprint = "Redmi/haydn/haydn:12/SKQ1.211001.001/V13.0.6.0.SKKCNXM:user/release-keys";
+                description = "haydn-user 12 SKQ1.211001.001 V13.0.6.0.SKKCNXM release-keys";
                 marketname = "Redmi K40 Pro";
             }
+            mod_device = "haydn";
             product_sku= "nfc";
     } else {
         model = "M2012K11G";
         brand = "Xiaomi";
         device = "haydn";
-        fingerprint = "Redmi/haydn/haydn:11/RKQ1.201112.002/V12.5.4.0.RKKMIXM:user/release-keys";
-        description = "haydn-user 11 RKQ1.201112.002 V12.5.4.0.RKKMIXM release-keys";
+        fingerprint = "Redmi/haydn/haydn:12/SKQ1.211001.001/V13.0.1.0.SKKMIXM:user/release-keys";
+        description = "haydn-user 12 SKQ1.211001.001 V13.0.1.0.SKKMIXM release-keys";
         marketname = "Mi 11i Global";
         mod_device = "haydn_global";
         product_sku= "nfc";
@@ -124,11 +127,8 @@ void vendor_load_properties() {
     set_ro_product_prop("device", device);
     set_ro_product_prop("model", model);
 
-    property_override("ro.product.marketname", marketname.c_str());
     property_override("ro.build.description", description.c_str());
-    if (mod_device != "") {
-        property_override("ro.product.mod_device", mod_device.c_str());
-    }
+    property_override("ro.product.mod_device", mod_device.c_str());
     if (product_sku != "") {
         property_override("ro.boot.product.hardware.sku", product_sku.c_str());
     }
