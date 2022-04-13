@@ -42,10 +42,6 @@ PRODUCT_PACKAGES += \
     checkpoint_gc \
     otapreopt_script
 
-# AID/fs configs
-PRODUCT_PACKAGES += \
-    fs_config_files
-
 # ANT+
 PRODUCT_PACKAGES += \
     AntHalService-Soong \
