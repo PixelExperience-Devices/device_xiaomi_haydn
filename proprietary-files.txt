@@ -1096,7 +1096,7 @@ vendor/lib64/unnhal-acc-htp.so
 
 # NFC
 vendor/etc/libnfc-nxp_RF.conf:vendor/libnfc-nxp_RF.conf
-vendor/etc/libnfc-nci.conf
+vendor/etc/libnfc-nci.conf|d55fb720a8388e6e80e058e4bb7284974a535c08|a4262cad50ccab7b9e5fbb23143279adf80fdced
 vendor/etc/libnfc-nxp.conf
 vendor/lib/libsn100u_fw.so:vendor/lib64/libsn100u_fw.so
 vendor/lib64/jcos_nq_client.so

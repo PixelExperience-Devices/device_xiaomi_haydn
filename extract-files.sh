@@ -68,6 +68,15 @@ function blob_fixup() {
         vendor/lib64/android.hardware.secure_element@1.0-impl.so)
             "${PATCHELF}" --remove-needed "android.hidl.base@1.0.so" "${2}"
             ;;
+                vendor/etc/libnfc-nci.conf)
+            cat << EOF >> "${2}"
+#########################################################################
+# Mifare Tag implementation
+# 0: General implementation
+# 1: Legacy implementation
+LEGACY_MIFARE_READER=1
+EOF
+            ;;
     esac
 }
 
