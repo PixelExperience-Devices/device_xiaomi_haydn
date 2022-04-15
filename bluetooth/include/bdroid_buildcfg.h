@@ -21,37 +21,7 @@
 
 #ifndef _BDROID_BUILDCFG_H
 #define _BDROID_BUILDCFG_H
-#include <stdint.h>
-#include <string.h>
 
-#ifdef __cplusplus
-extern "C" {
-#endif
-int property_get(const char *key, char *value, const char *default_value);
-#ifdef __cplusplus
-}
-#endif
-
-inline const char* BtmGetDefaultName()
-{
-	char region[92];
-	char sku[92];
-	property_get("ro.boot.hwc", region, "");
-	property_get("ro.boot.hardware.sku", sku, "");
-
-	if (!strcmp("IN", region)) {
-		return "Mi 11X Pro";
-	}
-	if (!strcmp("CN", region)) {
-        if (!strcmp("haydnpro", sku)) {
-            return "Redmi K40 Pro+";
-        }
-        return "Redmi K40 Pro";
-    }
-    return "Mi 11i";
-}
-
-#define BTM_DEF_LOCAL_NAME BtmGetDefaultName()
 // Disables read remote device feature
 #define MAX_ACL_CONNECTIONS   16
 #define MAX_L2CAP_CHANNELS    16
