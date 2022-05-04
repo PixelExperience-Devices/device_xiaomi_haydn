@@ -66,4 +66,7 @@
 
     <!-- Do not translate. Default access point SSID used for tethering -->
     <string name="wifi_tether_configure_ssid_default" translatable="false">Mi 11X Pro</string>
+
+    <!-- boolean indicating whether the WiFi chipset has 6GHz band support -->
+    <bool translatable="false" name="config_wifi6ghzSupport">true</bool>
 </resources>
