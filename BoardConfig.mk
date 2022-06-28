@@ -117,7 +117,6 @@ BOARD_KERNEL_CMDLINE += androidboot.console=ttyMSM0 androidboot.hardware=qcom an
 # Kernel modules
 BOOT_KERNEL_MODULES := \
     hwid.ko \
-    fts_touch_spi.ko \
     focaltech_touch.ko \
     xiaomi_touch.ko
 
