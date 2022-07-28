@@ -12,12 +12,6 @@
     "branch": "twelve"
   },
   {
-    "repository": "vendor_xiaomi_haydn-miuicamera",
-    "target_path": "vendor/xiaomi/haydn-miuicamera",
-    "remote": "pixel-devices-blobs",
-    "branch": "twelve"
-  },
-  {
    "repository"  : "vendor_xiaomi_haydn-firmware",
    "target_path" : "vendor/xiaomi/haydn-firmware",
    "remote"      : "pixel-devices-blobs",
