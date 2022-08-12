@@ -13,6 +13,7 @@
     <ctl name="ADC2 Volume" value="8" />
     <ctl name="ADC3 Volume" value="8" />
     <ctl name="ADC4 Volume" value="8" />
+    <ctl name="ADC3_MIXER Switch" value="1" />
     <ctl name="TX_CDC_DMA_TX_4 Channels" value="One" />
     <ctl name="TX_CDC_DMA_TX_4 SampleRate" value="KHZ_96" />
     <ctl name="TX_CDC_DMA_TX_4 Format" value="S16_LE" />
@@ -34,6 +35,8 @@
     <ctl name="PCM Source" value="None" />
     <ctl name="PCM Soft Ramp" value="4ms" />
     <ctl name="AMP PCM Gain" value="18" />
+    <ctl name="RCV Noise Gate" value="51" />
+    <ctl name="Noise Gate" value="51" />
     <ctl name="DSP Block Bypass" value="Off" />
     <ctl name="ASP TX1 Source" value="Zero" />
     <ctl name="ASP TX2 Source" value="Zero" />
@@ -895,6 +898,8 @@
        <ctl name="RCV ASPRX1 Slot Position" value="0" />
        <ctl name="RCV ASPTX Ref" value="Ref" />
        <ctl name="Cirrus SP Usecase Config" value="None" />
+       <ctl name="Noise Gate" value="16245" />
+       <ctl name="RCV Noise Gate" value="16245" />
     </path>
 
     <path name="speaker-mono">
@@ -932,7 +937,19 @@
     </path>
 
     <path name="voice-speaker-stereo">
-        <path name="speaker" />
+        <ctl name="PCM Source" value="DSP" />
+        <ctl name="RCV PCM Source" value="DSP" />
+        <ctl name="ASP TX2 Source" value="DSPTX1" />
+        <ctl name="DSP RX1 Source" value="ASPRX1" />
+        <ctl name="DSP RX2 Source" value="ASPRX1" />
+        <ctl name="ASPRX1 Slot Position" value="1" />
+        <ctl name="ASPTX Ref" value="Ref" />
+        <ctl name="RCV AMP PCM Gain" value="18" />
+        <ctl name="RCV DSP RX1 Source" value="ASPRX1" />
+        <ctl name="RCV ASP TX1 Source" value="DSPTX1" />
+        <ctl name="RCV ASPRX1 Slot Position" value="0" />
+        <ctl name="RCV ASPTX Ref" value="Ref" />
+        <ctl name="Cirrus SP Usecase Config" value="None" />
         <ctl name="Fast Use Case Delta File" value="spk1_voice_delta.txt"/>
         <ctl name="RCV Fast Use Case Delta File" value="spk2_voice_delta.txt"/>
     </path>

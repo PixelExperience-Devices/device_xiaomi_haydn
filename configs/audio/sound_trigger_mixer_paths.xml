@@ -83,7 +83,7 @@
     <ctl name="ADC4 MUX" value="INP5" />
     <ctl name="ADC1_MIXER Switch" value="1" />
     <ctl name="ADC2_MIXER Switch" value="0" />
-    <ctl name="ADC3_MIXER Switch" value="0" />
+    <ctl name="ADC3_MIXER Switch" value="1" />
     <ctl name="ADC4_MIXER Switch" value="1" />
     <ctl name="ADC1 Volume" value="8" />
     <ctl name="ADC2 Volume" value="8" />
