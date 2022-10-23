@@ -1,17 +1,5 @@
 <compatibility-matrix version="2.0" type="framework">
 <hal format="hidl">
-    <name>android.hardware.drm</name>
-    <version>1.0-4</version>
-    <interface>
-        <name>ICryptoFactory</name>
-        <instance>clearkey</instance>
-    </interface>
-    <interface>
-        <name>IDrmFactory</name>
-        <instance>clearkey</instance>
-    </interface>
-</hal>
-<hal format="hidl">
     <name>android.hardware.gnss</name>
     <version>1.0</version>
     <interface>
@@ -33,38 +21,6 @@
     <interface>
         <name>ISap</name>
         <instance>slot2</instance>
-    </interface>
-</hal>
-<hal format="hidl">
-    <name>android.hardware.usb</name>
-    <version>1.0-3</version>
-    <interface>
-        <name>IUsb</name>
-        <instance>default</instance>
-    </interface>
-</hal>
-<hal format="hidl">
-    <name>android.hardware.wifi.hostapd</name>
-    <version>1.0-3</version>
-    <interface>
-        <name>IHostapd</name>
-        <instance>default</instance>
-    </interface>
-</hal>
-<hal format="hidl">
-    <name>android.hardware.wifi.supplicant</name>
-    <version>1.0-4</version>
-    <interface>
-        <name>ISupplicant</name>
-        <instance>default</instance>
-    </interface>
-</hal>
-<hal format="hidl">
-    <name>android.hardware.wifi</name>
-    <version>1.0-5</version>
-    <interface>
-        <name>IWifi</name>
-        <instance>default</instance>
     </interface>
 </hal>
 <hal format="hidl">
