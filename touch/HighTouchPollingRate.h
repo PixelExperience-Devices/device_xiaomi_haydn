@@ -6,7 +6,7 @@
 
 #pragma once
 
-#include <vendor/lineage/touch/1.0/IHighTouchPollingRate.h>
+#include <vendor/dot/touch/1.0/IHighTouchPollingRate.h>
 
 namespace vendor {
 namespace lineage {

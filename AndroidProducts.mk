@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_haydn.mk
+    $(LOCAL_DIR)/dot_haydn.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_haydn-user \
-    aosp_haydn-userdebug \
-    aosp_haydn-eng
+    dot_haydn-user \
+    dot_haydn-userdebug \
+    dot_haydn-eng

@@ -411,7 +411,8 @@ PRODUCT_COPY_FILES += \
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    $(LOCAL_PATH)
+    $(LOCAL_PATH) \
+    vendor/qcom/opensource/healthd-ext
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
