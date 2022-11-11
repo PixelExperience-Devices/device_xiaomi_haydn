@@ -64,9 +64,6 @@
     <!-- Enable OWE (Enhanced open) for Wifi hotspot (SAP) -->
     <bool name="config_vendor_wifi_softap_owe_supported">true</bool>
 
-    <!-- Do not translate. Default access point SSID used for tethering -->
-    <string name="wifi_tether_configure_ssid_default" translatable="false">Mi 11X Pro</string>
-
     <!-- boolean indicating whether the WiFi chipset has 6GHz band support -->
     <bool translatable="false" name="config_wifi6ghzSupport">true</bool>
 </resources>

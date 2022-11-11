@@ -1,4 +1,4 @@
 runtime_resource_overlay {
-    name: "HaydnGLWifiOverlay",
+    name: "HaydnGLSettingsProviderOverlay",
     vendor: true
 }

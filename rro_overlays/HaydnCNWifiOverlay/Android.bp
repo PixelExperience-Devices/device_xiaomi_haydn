@@ -1,6 +1,4 @@
 runtime_resource_overlay {
     name: "HaydnCNWifiOverlay",
-    theme: "HaydnCNWifiOverlay",
-    sdk_version: "current",
-    product_specific: true
+    vendor: true
 }
